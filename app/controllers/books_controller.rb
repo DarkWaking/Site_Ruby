@@ -4,6 +4,7 @@ class BooksController < ApplicationController
   end
   def create
     Book.create title: params[:title]
+    flash[:notice] = "Le livre a bien été ajouté"
     redirect_to "/books"
   end
   def show
