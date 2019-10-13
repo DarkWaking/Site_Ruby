@@ -1,0 +1,17 @@
+<h1>Articles</h1>
+<br>
+
+<% @posts.each do |post| %>
+<div class="card w-75">
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text"><%= post.content %></p>
+    <%= link_to 'Voir', post, class: 'btn btn-primary' %>
+    <%= link_to 'Modifier', edit_post_path(post), class: 'btn btn-warning' %>
+    <%= link_to 'Supprimer', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  </div>
+</div>
+<br>
+<% end %>
+
+<%= link_to 'Nouvel article', new_post_path, class: 'btn btn-light' %>

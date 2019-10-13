@@ -1,0 +1,12 @@
+<p>
+  <strong>Titre :</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Contenu :</strong>
+  <%= @post.content %>
+</p>
+
+<%= link_to 'Modifier', edit_post_path(@post), class: 'btn btn-light' %> |
+<%= link_to 'Retour', posts_path, class: 'btn btn-light' %>

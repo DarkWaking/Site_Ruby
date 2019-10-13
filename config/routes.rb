@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   ActiveAdmin.routes(self)
   # get  'books'   => 'books#index'
   # post 'books'    => 'books#create'
