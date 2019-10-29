@@ -6,6 +6,7 @@ ruby '2.5.6'
 gem 'activeadmin'
 gem 'jquery-rails'
 gem 'cloudinary'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
