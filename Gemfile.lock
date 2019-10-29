@@ -118,6 +118,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (1.1.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.8.0)
@@ -319,6 +320,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   cloudinary
   devise
+  devise-bootstrap-views (~> 1.0)
   jbuilder (~> 2.7)
   jquery-rails
   puma (~> 3.11)
