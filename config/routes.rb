@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  root "pages#home"
+  devise_for :users
   resources :posts
+  resources :users
   ActiveAdmin.routes(self)
   # get  'books'   => 'books#index'
   # post 'books'    => 'books#create'
